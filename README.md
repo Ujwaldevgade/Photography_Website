@@ -56,6 +56,9 @@ This website serves as a professional portfolio for a photographer, presenting t
 
 2. Open your browser and navigate to `http://localhost:3000` to view the website.
 
+## Project Structure
+
+
 ## Screenshots
 
 Here are some screenshots of the website:
