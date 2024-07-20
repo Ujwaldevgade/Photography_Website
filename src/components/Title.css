@@ -1,0 +1,151 @@
+.title-container {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  /*background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  /*background-repeat: no-repeat; /* Prevents repeating the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 1em;
+  overflow: hidden; /* Hides any overflow caused by large images */
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+  max-width: 90%; /* Limits the width of the content */
+  margin: 0 auto; /* Centers the content horizontally */
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.typing-effect {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff; /* White text color */
+  border-right: 2px solid #ffffff; /* White cursor effect */
+  overflow: hidden;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff;
+  }
+}
+
+.overlay p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  line-height: 1.5em;
+  color: #ffffff; /* White text color */
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0;
+  font-size: 1.1em;
+  text-align: left;
+  color: #ffffff; /* White text color */
+  animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.overlay li {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .title-container {
+    height: 80vh; /* Adjust height for medium screens */
+  }
+
+  .typing-effect {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  .overlay p {
+    font-size: 1em; /* Adjust paragraph font size */
+  }
+
+  .overlay ul {
+    font-size: 1em; /* Adjust list font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    height: 70vh; /* Adjust height for smaller screens */
+  }
+
+  .typing-effect {
+    font-size: 1.5em; /* Further adjust font size for mobile screens */
+  }
+
+  .overlay p {
+    font-size: 0.9em; /* Further adjust paragraph font size */
+  }
+
+  .overlay ul {
+    font-size: 0.9em; /* Further adjust list font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .title-container {
+    height: 60vh; /* Further adjust height for very small screens */
+  }
+
+  .typing-effect {
+    font-size: 1.2em; /* Further adjust font size for very small screens */
+  }
+
+  .overlay p {
+    font-size: 0.8em; /* Further adjust paragraph font size */
+  }
+
+  .overlay ul {
+    font-size: 0.8em; /* Further adjust list font size */
+  }
+}
