@@ -28,9 +28,9 @@ const Contact = () => {
       <h1>Contact Me</h1>
 
       <div className="phone-numbers">
-        <p><a>Ketan Khasale</a></p>
+        <p><strong>Ketan Khasale</strong></p>
         <p>Call Me: <a href="tel:+1234567890">8623948339</a>, <a href="tel:+0987654321">7823875294</a></p>
-        <p>Address: <a>Datey College Road, Yavatmal, 445001, Maharashtra, India</a></p>
+        <p>Address: <strong>Datey College Road, Yavatmal, 445001, Maharashtra, India</strong></p>
       </div>
 
       <div className="social-icons">
