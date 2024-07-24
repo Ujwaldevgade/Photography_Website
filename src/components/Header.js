@@ -24,13 +24,10 @@ const Header = () => {
             <a href="https://www.instagram.com/ketankhasalephotography/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i> 
             </a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook"></i> 
-            </a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://youtube.com/@ketankhasale9166?si=BVwsXVm00BLYqDNq" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube"></i> 
             </a>
-            <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:ketankhasale46@gmail.com" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-envelope"></i> 
             </a>
             <a href="https://wa.me/8623948339" target="_blank" rel="noopener noreferrer">

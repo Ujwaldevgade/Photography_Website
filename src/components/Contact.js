@@ -29,7 +29,7 @@ const Contact = () => {
 
       <div className="phone-numbers">
         <p><strong>Ketan Khasale</strong></p>
-        <p>Call Me: <a href="tel:+1234567890">8623948339</a>, <a href="tel:+0987654321">7823875294</a></p>
+        <p>Call Me: <a href="tel:+1234567890">8623948339</a> / <a href="tel:+0987654321">7823875294</a></p>
         <p>Address: <strong>Datey College Road, Yavatmal, 445001, Maharashtra, India</strong></p>
       </div>
 
@@ -37,13 +37,10 @@ const Contact = () => {
         <a href="https://www.instagram.com/ketankhasalephotography/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i> Instagram
         </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-facebook"></i> Facebook
-        </a>
-        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtube.com/@ketankhasale9166?si=BVwsXVm00BLYqDNq" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-youtube"></i> YouTube
         </a>
-        <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:ketankhasale46@gmail.com" target="_blank" rel="noopener noreferrer">
           <i className="fas fa-envelope"></i> Email
         </a>
         <a href="https://wa.me/8623948339" target="_blank" rel="noopener noreferrer">

@@ -124,19 +124,22 @@ form button:hover {
   }
 
   #contact .social-icons {
-    flex-direction: column;
+    justify-content:center;
     align-items: center;
+    margin-right: 0.5em;
   }
 
   #contact .social-icons a {
-    font-size: 1em;
-    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
   }
 
   form {
     padding: 1em;
   }
 }
+
 
 /* Phone Numbers Styles */
 .phone-numbers {
@@ -157,5 +160,5 @@ form button:hover {
 }
 
 .phone-numbers a:hover {
-  color: #6c6c6c;
+  color: #007bff;
 }
