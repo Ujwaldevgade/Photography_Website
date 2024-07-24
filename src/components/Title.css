@@ -163,7 +163,7 @@
 
 @media (max-width: 768px) {
   .title-container {
-    height: 70vh; /* Adjust height for smaller screens */
+    height: 100vh; /* Adjust height for smaller screens */
   }
 
   .typing-effect {
@@ -181,7 +181,7 @@
 
 @media (max-width: 480px) {
   .title-container {
-    height: 100vh; /* Further adjust height for very small screens */
+    height: 70vh; /* Further adjust height for very small screens */
   }
 
   .typing-effect {
