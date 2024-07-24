@@ -181,7 +181,7 @@
 
 @media (max-width: 480px) {
   .title-container {
-    height: 145vh; /* Further adjust height for very small screens */
+    height: 100vh; /* Further adjust height for very small screens */
   }
 
   .typing-effect {
