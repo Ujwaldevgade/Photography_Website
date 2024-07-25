@@ -1,9 +1,6 @@
 .title-container {
   position: relative;
   height: 100vh; /* Full viewport height */
-  /*background-size: cover; /* Ensures the image covers the container */
-  background-position: center; /* Centers the image */
-  /*background-repeat: no-repeat; /* Prevents repeating the image */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +8,19 @@
   text-align: center;
   padding: 0 1em;
   overflow: hidden;
-} 
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  z-index: -1; /* Places the image behind the overlay content */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .overlay {
   background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
@@ -19,6 +28,7 @@
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
   max-width: 90%; /* Limits the width of the content */
+  width: 80%; /* Set width to a fixed percentage for better responsiveness */
   margin: 0 auto; /* Centers the content horizontally */
   animation: fadeIn 2s ease-in-out;
 }
@@ -46,7 +56,6 @@
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-/* Add a pseudo-element for the hover effect */
 .typing-effect::after {
   content: "Welcome to My Website!";
   position: absolute;
@@ -89,14 +98,6 @@
   color: #ffffff; /* White text color */
 }
 
-.overlay p {
-  font-size: 1.3em; /* Slightly larger font size for better visibility */
-  margin: 0.75em 0; /* Increased margin for better spacing */
-  line-height: 1.6em; /* Increased line-height for readability */
-  color: #ffffff; /* White text color */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow for depth */
-}
-
 .overlay ul {
   list-style: none;
   padding: 0;
@@ -121,7 +122,6 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Expand text shadow for emphasis */
 }
 
-
 @keyframes slideIn {
   from {
     transform: translateY(20px);
@@ -132,7 +132,6 @@
     opacity: 1;
   }
 }
-
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -173,11 +172,16 @@
 
 @media (max-width: 480px) {
   .title-container {
-    height: 145vh; /* Further adjust height for very small screens */
+    height: 100vh; /* Adjust height for very small screens */
   }
 
   .typing-effect {
     font-size: 1.2em; /* Further adjust font size for very small screens */
+  }
+
+  .overlay {
+    width: 95%; /* Ensure the overlay takes up more width on small screens */
+    padding: 1.5em; /* Adjust padding for smaller screens */
   }
 
   .overlay p {

@@ -22,7 +22,6 @@ const photos = [
   '8_1.jpg',
   'IMG_7064.jpg',
   '5.jpg',
-  
   'IMG_9558 copy.jpg',
   'IMG_9566.jpg',
   'Screenshot 2024-07-20 000245.png',
@@ -31,7 +30,6 @@ const photos = [
   'Screenshot 2024-07-20 000402.png',
   'Screenshot 2024-07-20 000414.png',
   'Screenshot 2024-07-20 000506.png',
-  
   'Screenshot 2024-07-20 000547.png',
   'Screenshot 2024-07-20 000602.png',
   'Screenshot 2024-07-20 000615.png',
@@ -54,7 +52,6 @@ const photos = [
   '14.jpg',
   '11.jpg',
   '6.jpg',
-  'Screenshot 2024-07-20 000523.png',
   // Add more photo file names here
 ];
 
